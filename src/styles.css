@@ -1,0 +1,55 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  background: #333;
+}
+img {
+  width: 100%;
+  height: 70%;
+  border-radius: 8px;
+}
+.cards {
+  width: 300px;
+  height: 450px;
+  margin: 1.2em;
+  text-align: center;
+  line-height: 1.8;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border-radius: 8px;
+  transition: 0.7s ease;
+}
+.cards:hover {
+  box-shadow: 2px 3px 5px rgba(163, 118, 63, 0.6),
+    1px 1px 2px rgba(201, 142, 71, 0.6), 5px 5px 5px rgba(163, 118, 63, 0.6);
+}
+
+.wrapper {
+  /* width: 100vw;
+  height: 100vh; */
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #333;
+  padding: auto;
+  overflow-x: hidden;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+@media screen and (max-width: 900px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+}
